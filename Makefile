@@ -1,14 +1,14 @@
 .PHONY: all
-all: fmt lint
+all: fmt lint test
 
 .PHONY: fmt
 fmt:
 	go fmt ./...
 
-.PHONY: test
-test:
-	go test -cover ./...
-
 .PHONY: lint
 lint:
 	golangci-lint run
+
+.PHONY: test
+test:
+	go test -cover ./...

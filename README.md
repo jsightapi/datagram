@@ -1,1 +1,1 @@
-# JSight Statistics Server Event
+Packs and unpacks a set of keys and values into a CSV string that fits into one UDP packet (508 bytes)
